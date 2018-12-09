@@ -1,0 +1,18 @@
+{
+  "name": "worker",
+  "version": "1.0.0",
+  "description": "Worker",
+  "main": "index.js",
+  "author": "Lior Elrom",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon",
+    "docker:dev": "docker build -f Dockerfile.dev .",
+    "docker:prod": "docker build -f Dockerfile ."
+  },
+  "dependencies": {
+    "nodemon": "^1.18.7",
+    "redis": "^2.8.0"
+  }
+}
